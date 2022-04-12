@@ -1,0 +1,10 @@
+package com.practice.demo.novare;
+
+public class FindMaximum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
