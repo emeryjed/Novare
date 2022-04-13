@@ -9,7 +9,7 @@ public class CeasarCipher {
 		String input = "abc";
 		String input2 = "xyz";
 		System.out.println(ceasarCipher(input, 5));
-		System.out.println(ceasarCipher(input2, 5));
+		System.out.println(ceasarCipher(input2, 52));
 
 	}
 	
@@ -75,9 +75,9 @@ public class CeasarCipher {
 			else if(letter == 'y') alphabetOrder = 24;
 			else if(letter == 'z') alphabetOrder = 25;
 			
-			//only for notation not greater than 26
 			if (alphabetOrder+notation > 25) {
-				alphabetOrder = (alphabetOrder+notation) - 26; 
+				alphabetOrder = (alphabetOrder+notation);
+				while (alphabetOrder > 25) alphabetOrder = alphabetOrder - 26; 
 				return alphabetMapping.get(alphabetOrder);
 				}
 			
